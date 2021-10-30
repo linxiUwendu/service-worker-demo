@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Service Worker</title>
+    <meta name="referrer" content="no-referrer">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="/img/logo.jpg">
+    </div>
+    <!-- <div class="pic">
+        <img src="https://image.baidu.com/search/down?tn=download&ipn=dwnl&word=download&ie=utf8&fr=result&url=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%253A%252F%252Fimg.puchedu.cn%252Fuploads%252F0%252F26%252F3598788621%252F2763101137.jpg%26refer%3Dhttp%253A%252F%252Fimg.puchedu.cn%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1638018472%26t%3D2d8b113216bd1dcfd5f0ced167949d14&thumburl=https%3A%2F%2Fimg2.baidu.com%2Fit%2Fu%3D3415158218%2C4216867076%26fm%3D26%26fmt%3Dauto">
+        <h2>跨域测试</h2>
+    </div> -->
+    <div class="movie-list"></div>
+    <!-- javascript -->
+    <script src="https://cdn.bootcss.com/require.js/2.3.5/require.js"></script>
+    <script>
+        requirejs.config({
+            baseUrl: 'js',
+            paths: {
+                axios: '//cdn.bootcss.com/axios/0.18.0/axios'
+            }
+        });
+        require(['index']);
+    </script>
+    <!-- <script type="module" src="index.js"></script> -->
+</body>
+
+</html>
